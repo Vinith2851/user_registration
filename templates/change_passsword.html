@@ -1,0 +1,22 @@
+{% extends 'dummy.html' %}
+
+{%block title %}
+    <title>CHANGE PASSWORD</title>
+{% endblock %}
+
+{% block body_block %}
+
+    <center>
+        <h1>CHANGE PASSWORD</h1>
+        <form method="POST">
+            {% csrf_token %}
+           
+
+            <label for="pw">PASSWORD</label>
+            <input type="password" name="pw" id="pw"><br><br>
+
+            <input type="submit" value="Change Password" class="btn btn-primary">
+        </form>
+    </center>
+
+{% endblock %}
